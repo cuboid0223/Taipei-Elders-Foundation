@@ -1,0 +1,8 @@
+.map {
+  max-width: 450px;
+  max-height: 450px;
+  @include iphone {
+    width: 100%;
+    height: 100%;
+  }
+}

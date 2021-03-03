@@ -1,0 +1,62 @@
+.banner {
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 滑動整個頁面 */
+  scroll-snap-align: start;
+  &__title {
+    letter-spacing: -2px;
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    @include pad {
+      font-size: 40px;
+    }
+  }
+  &__title > span {
+    display: inline-block;
+    overflow: hidden;
+  }
+  &__title > span > i {
+    font-style: normal;
+    position: relative;
+    top: 6rem;
+    animation: 1s swift-up ease-in-out forwards;
+  }
+
+  .ExpandMoreIcon {
+    position: absolute;
+    // background-color: red;
+    bottom: 30px;
+    font-size: 60px;
+    color: #fff;
+    transform: translateY(0px);
+    animation-name: expandMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 2;
+  }
+
+  @keyframes swift-up {
+    to {
+      top: 0rem;
+    }
+  }
+  @keyframes expandMove {
+    0% {
+      transform: translateY(10px);
+    }
+    25% {
+      transform: translateY(15px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  /* 滑動整個頁面 */
+  scroll-snap-align: start;
+  @include pad {
+    justify-content: center;
+  }
+  &__image {
+    height: 100vh;
+    width: 50%;
+    border-radius: 20px;
+    margin: 40px;
+    padding: 10px;
+    @include pad {
+      display: none;
+    }
+  }
+  &__modalsContainer {
+    margin-top: 40px;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

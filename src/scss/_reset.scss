@@ -1,0 +1,32 @@
+* {
+  // outline: solid gray 2px;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: SF Pro Text, Semibold;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}

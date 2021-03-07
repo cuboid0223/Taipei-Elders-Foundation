@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Homepage from "./screens/Homepage";
-
+import RecordPage from "./screens/RecordPage";
 
 import "./scss/all.css";
 
@@ -14,14 +14,15 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* <Header /> */}
+        <Header />
 
         <Switch>
           <Route path="/about">{/* <About /> */}</Route>
-          <Route path="/users">{/* <Users /> */}</Route>
+          <Route path="/record">
+            <RecordPage />
+          </Route>
           <Route path="/">
             <Homepage />
-           
           </Route>
         </Switch>
       </div>

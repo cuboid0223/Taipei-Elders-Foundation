@@ -1,5 +1,6 @@
 import React from "react";
 import AboutModal from "./AboutModal";
+import Carousel from '../components/Carousel'
 const About = () => {
   return (
     <div className="about">
@@ -30,16 +31,17 @@ const About = () => {
         />
       </div>
 
-      <div
+      {/* <div
         className="about__image"
         style={{
           height: "100vh",
           width: "50%",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundImage: `url(${"https://images.pexels.com/photos/1786258/pexels-photo-1786258.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"})`,
+          backgroundImage: `url(${""})`,
         }}
-      ></div>
+      ></div> */}
+      <Carousel />
     </div>
   );
 };

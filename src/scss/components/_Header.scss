@@ -7,8 +7,13 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: red;
-
+  transition: 0.5s;
+  // background-color: red;
+  &__black {
+    background-color: #f2f3f7;
+    opacity: 0.7;
+    box-shadow: 0px 4px 5px 0px #afa8a9;
+  }
   @include iphone {
     justify-content: space-between;
   }
@@ -58,9 +63,28 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
+  &__option {
+    // opacity: 0.5;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    & > p {
+      margin-bottom: unset;
+    }
+  }
+  &__optionBorderBlack {
+    border-radius: 20px;
+    color: gray;
+    background-color: #fff;
+    border: 1px solid gray;
+    transition: 0.5s;
 
-    @include iphone {
-      display: none !important;
+    &:hover {
+      background-color: orange;
+      border: none;
     }
   }
 
